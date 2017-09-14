@@ -1,0 +1,25 @@
+{
+  "name": "ethereum-marketplace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moodysalem/ethereum-marketplace.git"
+  },
+  "author": "Moody Salem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moodysalem/ethereum-marketplace/issues"
+  },
+  "homepage": "https://github.com/moodysalem/ethereum-marketplace#readme",
+  "dependencies": {
+    "truffle": "^3.4.9"
+  }
+}
