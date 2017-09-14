@@ -107,7 +107,6 @@ contract Marketplace {
      {
         // only the vendor can list an item on behalf of the vendor
         require(msg.sender == vendors[vendorId].owner);
-        require(numBlocks > (1 days / 15));
 
         uint id = currentId++;
         listings[id] = Listing({
@@ -134,6 +133,9 @@ contract Marketplace {
         require(listing.qty > 0);
         require(listing.blockExpiration > block.number);
         require(listing.price == msg.value);
+
+        // one of them was sold
+        listing.qty--;
 
         uint id = currentId++;
         orders[id] = Order({
